@@ -1,0 +1,2 @@
+function back(){
+    history.back();}

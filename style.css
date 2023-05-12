@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@media (max-width: 575.98px) {
+
+  .modal-dialog {
+    margin: auto;
+    max-width: none;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+  }
+
+  .modal-body {
+    height: calc(100vh - 56px);
+    /* 56px es la altura de la barra de navegación en dispositivos móviles */
+    padding: 0;
+  }
+
+  .embed-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .embed-responsive .embed-responsive-item {
+    height: 100%;
+  }
+
+
+}
+
+@media (max-width: 767.98px) {
+
+  .modal-dialog {
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+
+  }
+
+  .modal-body {
+    height: calc(100vh - 56px);
+    padding: 0;
+  }
+
+  .modal-fullscreen-md-down .embed-responsive {
+    height: 100%;
+  }
+
+  .modal-fullscreen-md-down .embed-responsive-item {
+    height: 100%;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  #acceso {
+    width: 50px;
+    height: auto;
+
+  }
+
+  #footermedia {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 1400px) {
+
+  #fotoinicio {
+    width: 300px;
+    height: auto;
+    margin-top: 1.3rem;
+  }
+}
+
+
+/* Menu de navegacion */
+
+.dropdown-menu li {
+  position: relative;
+
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+
+}
+
+.nav-tabs>li:hover>.dropdown-menu {
+  display: block;
+}
+
+
+.nav-link:hover {
+  border-radius: 3px;
+  background: none;
+  background-color: #ffa600;
+  color: #000000 !important;
+}
+
+.dropdown-item:hover {
+  background: none;
+  background-color: #ffa600;
+  color: #000000 !important;
+}
+
+#search:hover {
+  background: none;
+  background-color: #ffa600;
+  color: #000000 !important
+}
+
+.position {
+  margin-top: 7px;
+  margin-right: 700px;
+
+}
+
+/* Carousel */
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 460px;
+}
+
+.carousel-inner {
+  height: 460px;
+}
+
+.c-item {
+  height: 460px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.caru {
+
+  margin-top: -0.25rem;
+}
+
+/* Migas de pan */
+
+.breadcrumb {
+  padding: 2px 15px !important;
+}
+
+/*Fondo de los cursos de inicio*/
+
+#bienvenido {
+  background: rgb(178, 195, 221);
+  background: radial-gradient(circle, rgba(178, 195, 221, 0.685) 10%, rgb(230, 238, 250) 70%, rgba(255, 255, 255, 1) 100%) !important;
+
+
+}
+
+.tituloCurso:hover {
+  text-decoration: underline;
+}
+
+/* Formación profesional */
+
+.card-body {
+
+  background-color: rgb(255, 255, 255);
+
+}
+
+.card-body:hover {
+  background: none;
+  background-color: #ffa600;
+  color: #000000 !important;
+}
+
+
+.gradoColor {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  overflow: hidden;
+
+}
+
+
+/*Erasmus*/
+
+#erasmus {
+  background-image: linear-gradient(60deg, #29323c 0%, #505152 100%);
+}
+
+
+/* Personalización del modal embed (novedades) */
+
+.modal-dialog {
+  max-width: 80%;
+  height: 100%;
+
+}
+
+
+.embed-responsive {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.embed-responsive .embed-responsive-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
+
+/*Paginación*/
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.page-item {
+  margin: 0 10px;
+}
+
+.page-link {
+  color: #333;
+  border: none;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.page-link:hover,
+.pagination-active {
+  background-color: #ffa600;
+  color: #000000;
+  border-color: #333;
+}
+
+.page-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.pagination-active {
+  pointer-events: none;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  border-radius: 10px;
+  padding: 5px auto;
+}
+
+/* boton de scroll */
+
+.btn-scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  opacity: 0.8;
+}
+
+.background-profesores{
+
+  background-image: url(Fotos/Queipo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
