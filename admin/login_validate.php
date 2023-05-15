@@ -32,4 +32,3 @@ if ($result->num_rows > 0) {
 // Cerrar la conexión a la base de datos
 $conn->close();
 ?>
-
