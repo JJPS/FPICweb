@@ -14,7 +14,7 @@ $usuario = $_POST['usuario'];
 $password = $_POST['password'];
 
 // Realizar la consulta a la base de datos para validar las credenciales
-$sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND contraseña = '$password'";
+$sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND password = '$password'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
     // Las credenciales son inválidas, almacenar mensaje de error en $_mensaje
     $_mensaje = 'Credenciales inválidas. Iniciar sesión fallido.';
     // Redirigir al usuario a la página de inicio de sesión con el mensaje de error
-    header("Location: login.php?mensaje=" . urlencode($_mensaje));
+    header("Location: login.php");
     exit();
 }
 
