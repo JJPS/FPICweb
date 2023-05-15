@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
     // Las credenciales son inválidas, almacenar mensaje de error en $_mensaje
     $_mensaje = 'Credenciales inválidas. Iniciar sesión fallido.';
     // Redirigir al usuario a la página de inicio de sesión con el mensaje de error
-    header("Location: login.php");
+    header("Location: login.php?mensaje=" . urlencode($_mensaje));
     exit();
 }
 
