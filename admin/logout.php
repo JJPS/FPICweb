@@ -4,6 +4,6 @@ session_start();
 
 session_destroy();
 
-header("Location: FPIC.html");
+header("Location: ../FPIC.html");
 
 ?>
