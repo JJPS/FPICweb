@@ -15,7 +15,7 @@ $usuario = $_POST['usuario'];
 $password = $_POST['password'];
 
 // Realizar la consulta a la base de datos para validar las credenciales
-$sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND password = '$password'";
+$sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND contraseña = '$password'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
