@@ -7,7 +7,7 @@ include ("conecta.php");
 
 ?>
 <!DOCTYPE html>
-<html lang="es">    
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@ include ("conecta.php");
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="icon" type="image/jpg" href="../Fotos/icon.png" />
     <link rel="stylesheet" type="text/css" href="../style.css">
-    
+
     <title>Registro de profesores</title>
 </head>
 
@@ -38,8 +38,9 @@ include ("conecta.php");
 
                     <form action="register_profesores.php" method="POST">
                         <div class="mb-3">
+                            <label for="profesor" class="form-label">Selecciona un profesor</label>
                             <select class="form-select" name="profesor" id="profesor" onchange="mostrarDatosProfesor()">
-                                <option for="profesor" selected>Selecciona un profesor</option>
+                                <option selected>Selecciona un profesor</option>
                                 <option value="1">Carlos Andrés Campoy Gómez</option>
                                 <option value="2">Daniel Berbel Puerto</option>
                                 <option value="3">David Méndez Ubeda</option>
@@ -51,10 +52,9 @@ include ("conecta.php");
                                 <option value="9">Mustafa Mohamed Maanan</option>
                                 <option value="10">Salim Tieb Mohamedi</option>
                                 <option value="11">Samuel Higueras Fernández</option>
-                                <option value="12">Vicente Villanueva Gonzalez</option>
                             </select>
                         </div>
-                        <div class="mb-3" >
+                        <div class="mb-3">
                             <label for="nombreyapellidos" class="form-label">Nombre y apellidos</label>
                             <input type="text" class="form-control" id="nombreyapellidos" name="nombreyapellidos"
                                 required>
@@ -70,17 +70,18 @@ include ("conecta.php");
                         <div class="mb-3">
                             <label for="curso" class="form-label">Cursos</label>
                             <textarea class="form-control" id="curso" name="curso" rows="3"></textarea>
-                          </div>
+                        </div>
                         <div class="mb-3">
                             <label for="modulo" class="form-label">Módulo</label>
                             <textarea class="form-control" id="modulo" name="modulo" rows="3"></textarea>
-                          </div>
+                        </div>
                         <div class="mb-3">
                             <label for="codigo" class="form-label">Código</label>
                             <input type="text" class="form-control" id="codigo" name="codigo" required>
                         </div>
-                        <div class="d-grid gap-2 col-10 mx-auto pt-3">
+                        <div class="d-flex justify-content-evenly">
                             <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                            <a href="logout.php" class="btn btn-danger">Cerrar sesión</a>
                         </div>
                     </form>
                 </div>

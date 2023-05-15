@@ -44,7 +44,12 @@ include("conecta.php");
                                 <form action="login_validate.php" method="POST">
                                     <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                                     <p class="text-white-50 mb-5">Por favor ingrese su usuario y contraseña</p>
-
+                                    <?php
+                                    if (isset($_GET['mensaje'])) {
+                                        $mensaje = $_GET['mensaje'];
+                                        echo '<div class="alert alert-danger" role="alert">' . htmlspecialchars($mensaje) . '</div>';
+                                    }
+                                    ?>
                                     <div class="form-outline form-white mb-4 text-start">
                                         <label class="form-label" for="usuario">Usuario</label>
                                         <input type="usuario" id="usuario" class="form-control form-control-lg" />
